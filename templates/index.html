@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sentiment Analysis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      Amazon Review Sentiment Analysis
+    </a>
+  </nav>
+
+    <div style="padding: 5vh 2vw 2vw;">
+      <h2 style="color: darkgrey; font-family: sans-serif;">This webapp lets you analyse the Amazon Product Review, you enter in the text field below.</h2>
+      <h2 style="color: darkgrey; font-family: sans-serif;">It analyses wheather the review is a "Positive" or a "Negative" one.</h2>
+      <h4 style="color: darkgrey; font-family: sans-serif;"><i>(Accuracy of the ML Model : 90.5%)</i></h5>
+      <br><br><br>
+        <form action="/predict" method="POST">
+            <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Review...." aria-describedby="button-addon2" id="first" name="text" required="required">
+                <div class="input-group-append">
+                  <button class="btn btn-warning" id="sub" type="submit">Analyse</button>
+                </div>
+            </div>
+        </form>
+          <br><br>
+          <h3 style="text-align: center; font-family: sans-serif; color: orange;"><b>{{ s }}</b><h3>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+
+</html>
