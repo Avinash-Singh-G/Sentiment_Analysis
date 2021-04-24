@@ -3,6 +3,5 @@ numpy
 sklearn
 Flask 
 requests
-pickle
 bz2
 re
