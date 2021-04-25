@@ -20,7 +20,7 @@
       <h2 style="color: darkgrey; font-family: sans-serif;">It analyses wheather the review is a "Positive" or a "Negative" one.</h2>
       <h4 style="color: darkgrey; font-family: sans-serif;"><i>(Accuracy of the ML Model : 90.5%)</i></h5>
       <br><br><br>
-        <form action="{{ url_for(predict) }}" method="POST">
+        <form action="{{ url_for('predict')}}" method="POST">
             <div class="input-group mb-3">
                   <input type="text" class="form-control" placeholder="Review...." aria-describedby="button-addon2" id="first" name="text" required="required">
                 <div class="input-group-append">
